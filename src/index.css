@@ -1,13 +1,13 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ! how to apply default styling for elements in JSX using tailwind */
+@layer base {
+  nav a {
+    @apply w-full text-center p-2 font-semibold;
+  }
+  button {
+    @apply bg-primary rounded-full mx-4 p-4 text-white active:bg-clicked hover:drop-shadow-xl
+  }
 }
