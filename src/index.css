@@ -4,10 +4,17 @@
 
 /* ! how to apply default styling for elements in JSX using tailwind */
 @layer base {
+  nav {
+    @apply flex items-center justify-center;
+  }
   nav a {
     @apply w-full text-center p-2 font-semibold;
   }
   button {
-    @apply bg-primary rounded-full mx-4 p-4 text-white active:bg-clicked hover:drop-shadow-xl
+    @apply bg-primary rounded-full w-[100%] p-4 text-white active:bg-clicked hover:drop-shadow-xl;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }

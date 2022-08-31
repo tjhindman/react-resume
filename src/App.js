@@ -1,5 +1,6 @@
 import Nav from "./components/Nav";
 import About from "./components/About";
+import Projects from "./components/Projects";
 
 import "./App.css";
 
@@ -33,8 +34,9 @@ function App() {
       */}
       {/* 
         "Projects" section would go underneath "About me" section IF "Resume" IS NOT INCLUDED!!!
-          - would be a side scroll of any projects I may have worked on with a link to the deployed application (maybe include my Github profile link here if I don't have more than 1 project to show)
+          - would be a top down list of any projects I may have worked on with a link to the deployed application (maybe include my Github profile link here if I don't have more than 1 project to show at bottom right corner of "Projects" section)
       */}
+      <Projects />
       {/* 
         potential "Recommendations" section based on LinkedIn recommendations if I can figure out how to hook up to their API (might just copy + paste if not)
           - would also be a side scroll of cards for each recommendation with their profile pic, name and recommendation

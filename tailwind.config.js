@@ -7,6 +7,8 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        // added "xs" for smaller iPhone screens based on inspect tool
+        xs: "350px",
         sm: "480px",
         // sm: "640px", <-- old sizing dimensions
         // => @media (min-width: 640px) { ... }
